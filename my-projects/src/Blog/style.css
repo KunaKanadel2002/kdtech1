@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+/* font-family: 'Amita', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Carter+One&display=swap');
+/* font-family: 'Amita', cursive; */
+/* font-family: 'Carter One', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: #fff;
+    /* #e5eaf5; */
+    --secondary-color:#f8f9fa;
+    /* #a0d2eb; */
+    --light-shadow:#d0bdf4;
+    --dark-shadow:#343a40;
+    /* #8458B3; */
+    --primary-font:'Amita', cursive;
+    --secondary-font:'Carter One', cursive;
+    /* Heavy Purple: #a28089 */
+}
+body{
+    background-color:var(--primary-color);
+    /* font-family: var(--primary-font); */
+    padding-bottom: 2rem;
+    
+}
+.container{
+    margin-left:2rem ;
+    margin-top: 2rem;
+    width: 70rem;
+    padding: 2rem;
+    padding-top: 0;
+    background-color: var(--secondary-color);
+    box-shadow:  -.2rem -.2rem .2rem #e9ecec, .2rem .2rem .3rem #ceddec;
+    /* border-radius: .5rem; */
+}
+.container img{
+    width: 66rem;
+    Height:30rem;
+    border-radius: .5rem;
+}
+.header{
+    height: 8rem;
+    color: var(--light-shadow);
+    background-color: rgb(47, 45, 131);
+    /* border:solid 2px  var(--dark-shadow); */
+    letter-spacing: .5rem;
+    display: flex;
+    padding: 2rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Amita', cursive; 
+    font-family: 'Carter One', cursive;
+    /* box-shadow: inset -.2rem -.2rem .4rem black, inset .2rem .2rem .4rem white; */
+}
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.title{
+    font-family: 'Carter One', cursive;
+    color :rgba(0, 0, 0, 0.726);
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.icon{
+margin: 1rem;
+}
+.combo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    /* height: 4.5rem; */
+    /* border: black solid 2px; */
+    /* overflow: hidden; */
+}
+@media only screen and (max-width: 700px){
+  .container{
+      width: 30rem;
+  }
+  .container img{
+      width: 26rem;
+      height: 15rem;
+  }
+  .icon{
+      margin: .5rem;
+  }
+  .header{
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.938);
+  }
+}

@@ -1,9 +1,15 @@
 import React from 'react';
-import ToDoList from './ToDoList/ToDoList';
+import Blog from './Blog/Blog';
 
-const App=()=>{
-return(
-       <ToDoList/>
+
+
+const App = () => {
+       return (
+              <>
+                     <Blog/>
+                     
+                     
+              </>
        )
 }
 
